@@ -1,0 +1,8 @@
+.logo-background {
+    background: #1B5E20;
+    display: block;
+}
+.aboutbackground {
+    background-image: url("./HappyTrails.png");
+    background-color: blueviolet;
+}
