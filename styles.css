@@ -10,7 +10,9 @@ body{
     display: block;
     margin: auto;
     min-height: 100vh;
-    background: blueviolet;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: "Bookman Old Style";
 }
 
@@ -60,7 +62,7 @@ body{
 }
 
 .hero-heading{
-    color: black;
+    color: whitesmoke;
     position: center;
     font-size: 70px;
     text-transform: capitalize;
@@ -71,10 +73,10 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    height: 90vh;
+    height: 100vh;
     width: 40%;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 .home-section.active,
@@ -98,11 +100,11 @@ body{
 
 .project-heading{
     font-size: 100px;
-    background: cornflowerblue;
+    background: whitesmoke;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
-    color: darkblue;
+    color: #8CA6DB;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 8px transparent;
@@ -174,6 +176,7 @@ body{
     background: none;
     border: 2px solid black;
 }
+
 
 .project-card:hover .project-img{
     filter: blur(20px);
@@ -324,10 +327,26 @@ body{
     cursor: pointer;
 }
 
-footer{
-    margin: 0;
+
+.footer {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: whitesmoke;
+    padding: 45px 50px;
+    background-color: blueviolet;
+    color: black;
+}
+
+
+
+.icon-style {
+    height:40px;
+    margin-left:20px;
+    margin-top:5px;
+}
+
+.icon-style:hover {
+    background-color:yellow;
+    padding:5px;
 }
