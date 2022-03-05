@@ -18,14 +18,14 @@ body{
 
 .navbar{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9;
-    background: black;
+    background: transparent;
 }
 
 .link-group{
@@ -34,7 +34,7 @@ body{
 }
 
 .link a{
-    color: antiquewhite;
+    color: black;
     opacity: 0.5;
     text-decoration: none;
     text-transform: capitalize;
@@ -71,12 +71,12 @@ body{
 
 .home-img {
     position: absolute;
-    top: 0;
+    top: 10%;
     right: 0;
-    height: 100vh;
-    width: 40%;
+    height: 90%;
+    width: 50%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .home-section.active,
@@ -117,7 +117,7 @@ body{
 }
 
 .project-card{
-    height: 400px;
+    height: 300px;
     position: relative;
 }
 
